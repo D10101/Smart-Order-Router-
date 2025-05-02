@@ -2,7 +2,6 @@
 
 This project implements a backtest for a smart order routing strategy using the static cost model proposed by **Cont & Kukanov (2014)**. It allocates a 5,000-share buy order across multiple trading venues based on real-time quote data and compares performance against three common baselines.
 
----
 
 ## Files
 
@@ -10,7 +9,6 @@ This project implements a backtest for a smart order routing strategy using the 
 - `results.png` – Cumulative cost over time plot (9-minute execution window)  
 - `README.md` – This file
 
----
 
 ##  How It Works
 
@@ -26,7 +24,6 @@ This project implements a backtest for a smart order routing strategy using the 
   2. **TWAP** (equal-sized buckets per minute)
   3. **VWAP** (weighted by displayed ask sizes)
 
----
 
 ## 📊 Output
 
@@ -39,7 +36,6 @@ This project implements a backtest for a smart order routing strategy using the 
 
 ![results](results.png)
 
----
 
 ## 📈 Example JSON Output
 
