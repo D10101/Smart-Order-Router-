@@ -25,7 +25,7 @@ This project implements a backtest for a smart order routing strategy using the 
   3. **VWAP** (weighted by displayed ask sizes)
 
 
-## 📊 Output
+## Output
 
 - Prints a JSON object containing:
   - Best parameters
@@ -33,36 +33,3 @@ This project implements a backtest for a smart order routing strategy using the 
   - Savings (in basis points) vs. each baseline
 - Saves `results.png`:  
   Cumulative cost plotted for Best Ask, TWAP, and VWAP baselines
-
-![results](results.png)
-
-
-## 📈 Example JSON Output
-
-```json
-{
-  "best_params": {
-    "lambda_over": 0.0,
-    "lambda_under": 0.0,
-    "theta_queue": 0.0
-  },
-  "optimal": {
-    "total_cost": 1114117.28,
-    "avg_fill_price": 222.823456
-  },
-  "baseline_best_ask": {
-    "total_cost": 1114117.28,
-    "avg_fill_price": 222.823456
-  },
-  "baseline_TWAP": {
-    "total_cost": 1115304.1,
-    "avg_fill_price": 223.06082
-  },
-  "baseline_VWAP": {
-    "total_cost": 1115198.55,
-    "avg_fill_price": 223.03971
-  },
-  "savings_vs_best_ask_bps": 0.0,
-  "savings_vs_TWAP_bps": 10.64,
-  "savings_vs_VWAP_bps": 9.7
-}
